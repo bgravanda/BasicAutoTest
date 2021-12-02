@@ -5,7 +5,7 @@ public class BasicGeom {
         double dist = 0;
         var xchange = p1.x-p2.x;
         var ychange = p1.y-p2.y;
-        var intermediate = xchange*xchange+ychange-ychange;//oops
+        var intermediate = xchange*xchange+ychange*ychange;//oops
         dist = Math.sqrt(intermediate);
         return dist;
     }

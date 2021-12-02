@@ -9,5 +9,11 @@ public class TestGeom {
         var p2 = new Point(4,0);
         assert BasicGeom.calcDistance(p1,p2)==5;
     }
+    @Test
+    public void testZeroDist(){
+        Point p1 = new Point(4,4);
+        Point p2 = new Point(4,4);
+        assert BasicGeom.calcDistance(p1,p2)==0;
+    }
 
 }
